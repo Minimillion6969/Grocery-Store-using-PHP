@@ -128,3 +128,27 @@ $items = $conn->query("SELECT * FROM Items");
 
 </body>
 </html>
+
+<!-- CREATE TABLE Consumer (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    full_name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    address TEXT,
+    phone VARCHAR(15)
+);
+
+CREATE TABLE Items (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    description TEXT,
+    price DECIMAL(10, 2) NOT NULL,
+    image VARCHAR(255),
+    stock INT DEFAULT 0
+);
+
+-- Optional: Insert sample items
+INSERT INTO Items (name, description, price, image, stock) VALUES
+('Apple', 'Fresh red apples', 2.50, 'images/apple.jpg', 50),
+('Milk', '1 liter milk pack', 1.20, 'images/milk.jpg', 30);
+ -->
